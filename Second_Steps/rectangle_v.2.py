@@ -24,4 +24,5 @@ def main():
     
     # Todo; build a more robust value test and implement it 
     # Todo : loop while value are not strictly superior to 0
+
 main()
