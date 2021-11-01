@@ -4,7 +4,7 @@ def main():
     a = input("First number: ")
     b = input("Second number")
     
-    if a ==b:
+    if a == b:
         print("They are equal! ")
         
     elif int(a) < int(b):
