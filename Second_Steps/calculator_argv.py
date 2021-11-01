@@ -1,7 +1,7 @@
 # coding: utf-8
 
 # ! Multiplication will not work on linux bacause linux use * as a joker character in string
-
+# *todo find a better way to handle multiplication on linux
 import sys
 
 # print(sys.platform) # Just a test 
