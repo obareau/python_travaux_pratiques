@@ -6,6 +6,7 @@ def main():
     # length = 10
     # width = 3
     
+    # Value testing
     length = int(input("Length: "))
     width = int(input("Width: "))
     
@@ -17,6 +18,7 @@ def main():
         print("Width is not positive! ")
         return
     
+    # Algo
     area = length * width
     print("The area is: " , area) # print a str + value of area even if area is a int
     
