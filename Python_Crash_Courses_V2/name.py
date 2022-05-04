@@ -22,3 +22,4 @@ print(f"\tHello, \n\t{full_name.title()}!")
 favorite_language = " python "
 print (favorite_language.rstrip())
 print (favorite_language.lstrip())
+
