@@ -3,6 +3,7 @@ universe_age = 14_000_000_000
 print (universe_age)
 # return 14000000000
 
+# 3 in a row !!! or more
 x, y, z = 14, 'olivier', True
 print (x, y, z)
 # return 14 olivier True
