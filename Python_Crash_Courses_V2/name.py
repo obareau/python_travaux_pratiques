@@ -16,4 +16,9 @@ first_name = "ada"
 last_name = "lovelace"
 # f is for f-strings
 full_name = f"{gender} {first_name} {last_name}"
-print(f"\tHello, {full_name.title()}!")
+print(f"\tHello, \n\t{full_name.title()}!")
+
+# Stripping Whitespace
+favorite_language = " python "
+print (favorite_language.rstrip())
+print (favorite_language.lstrip())
