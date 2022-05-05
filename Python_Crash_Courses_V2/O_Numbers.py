@@ -1,4 +1,4 @@
-# Some weird stuff perfectly legit sinnce python 3.6
+# Some weird stuff perfectly legit since python 3.6
 universe_age = 14_000_000_000
 print (universe_age)
 # return 14000000000
