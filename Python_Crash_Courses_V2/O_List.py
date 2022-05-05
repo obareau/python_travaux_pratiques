@@ -1,3 +1,7 @@
+# based on python Crash courses V2 PDF
+from typing import List
+
+
 bicycles = ['vélo-pliant', 'ruffian', 'canondale','motobécane', 'truc rouillé']
 
 message = f"Bibi va s'acheter un {bicycles[0].title()}"
@@ -85,3 +89,53 @@ print(motorcycles)
 print(f"\nA {too_expensive.title()} is too expensive for me.")
 
 # Stopped at page 43 of Python Crash Course V2
+
+# EXERCICES
+# 3-4 Guest List
+# If you could invite anyone, living or deceased, to dinner, who
+# would you invite? Make a list that includes at least three people you’d like to
+# invite to dinner. Then use your list to print a message to each person, inviting
+# them to dinner.
+
+Guest_List = ['angie', 'jennifer', 'coco']
+print (Guest_List[0])
+print (Guest_List[1])
+print (Guest_List[2])
+
+# 3-5. Changing Guest List: You just heard that one of your guests can’t make the
+# dinner, so you need to send out a new set of invitations. You’ll have to think of
+# someone else to invite.
+# •
+# •
+# •
+# Start with your program from Exercise 3-4. Add a print() call at the end
+# of your program stating the name of the guest who can’t make it.
+# Modify your list, replacing the name of the guest who can’t make it with
+# the name of the new person you are inviting.
+# Print a second set of invitation messages, one for each person who is still
+# in your list.
+
+Guest_List = ['angie', 'jennifer', 'coco']
+print (f"{Guest_List[2].title()} ne peut pas venir")
+
+Guest_List[2] = 'lison'
+print (Guest_List) # just to be sure
+message = (f"{Guest_List[2].title()} peut venir en remplacement")
+print (message) # With modified last item
+print (f"{Guest_List[0].title()} peut toujours venir")
+print (f"{Guest_List[1].title()} peut toujours venir")
+# General message broadcast :-)
+print (f"{Guest_List} J'ai trouvé une table plus grande")
+
+Guest_List.insert(0, 'popol')
+print(Guest_List) # Just to be sure
+Guest_List.insert(2, 'dédé')
+print(Guest_List) # Just to be sure
+Guest_List.append('mario')
+print(Guest_List) # Just to be sure
+print (f"{Guest_List[0].title()} peut  venir en plus")
+print (f"{Guest_List[2].title()} peut  venir en plus")
+print (f"{Guest_List[-1].title()} peut  venir en plus")
+Guest_List.append('jen-jean')
+print (f"{Guest_List[-1].title()} peut  venir en plus")
+# page 42 chapter 3 

@@ -13,3 +13,6 @@ MAX_CONNECTIONS = 5000
 # of a program. Python doesn’t have built-­in constant types, but Python pro-
 # grammers use all capital letters to indicate a variable should be treated as a
 # constant and never be changed:
+
+int a = 0b0010'0010'1110;
+int b = 1'962'174;
