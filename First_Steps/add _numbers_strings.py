@@ -8,7 +8,7 @@ b = 23
 c = a + b
 print(c) # 42
 
-# WARNING  + is supercharged and cocatenate sttings
+# WARNING  + is supercharged and cocatenate strings
 a = "19"
 b = "23"
 c = a + b
