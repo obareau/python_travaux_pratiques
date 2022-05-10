@@ -11,7 +11,7 @@ system = sys.platform
 
 
 if system == "linux":
-    print("Warning ! for multiplication on linux system please use quote around operator (ex : 2 '*'3) ")
+    print(" Warning ! for multiplication on linux system please use quote around operator (ex : 2 '*'3) ")
     
 else:
     print ("You are using non linux system ... everything is fine with multiplication ")

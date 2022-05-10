@@ -1,7 +1,7 @@
 # coding: utf-8
 
 # ! when reading from the command line using input(), the resulting value is a string, 
-# ! Even if you only typed digits. therfore the addition operator + conncatenate the string
+# ! Even if you only typed digits. therefore the addition operator + conncatenate the string
 
 
 def wrong_way():
