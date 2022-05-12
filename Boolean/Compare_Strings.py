@@ -11,7 +11,7 @@ if how == '1':
 elif how == '2':
     first = len(a_in) > len(b_in)
     second = len(a_in) < len(b_in)
-
+    
 if first:
     print("First number is bigger")
 elif second:
