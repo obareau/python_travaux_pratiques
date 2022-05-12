@@ -1,4 +1,4 @@
-from random import randint
+yefrom random import randint
 
 
 class character():
