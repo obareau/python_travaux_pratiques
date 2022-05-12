@@ -22,7 +22,7 @@ def main():
     area = length * width
     print("The area is: " , area) # print a str + value of area even if area is a int
     
-    # Todo; build a more robust value test and implement it 
+    # Todo : build a more robust value test and implement it
     # Todo : loop while value are not strictly superior to 0
 
 main()
