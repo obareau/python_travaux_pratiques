@@ -3,7 +3,7 @@ import random
 Pj_Health = 50
 Enemy_Health = 50
 Round_Counter = 10
-Pj_Title = ("Lord")
+Pj_Rank = ("Lord") 
 
 
 # Title screen
@@ -18,7 +18,7 @@ def print_highlighted_text(text):
 
 print_highlighted_text("| Welcome to RPyG_Battle |")
 Pj_Name = input("Please enter your name : ")
-End_Message = (Pj_Title + Pj_Name," is dead !")
+End_Message = (Pj_Rank + Pj_Name," is dead !")
 # Gameloop
 
 while True:
@@ -53,12 +53,12 @@ while True:
     print(Round_Counter, " Round(s) left")
 
     if Pj_Health <= 0 :
-        print(f"{Pj_Title} {Pj_Name.title()} is dead")
+        print(f"{Pj_Rank} {Pj_Name.title()} is dead")
         break
         
         
     if Round_Counter == 0:
-        print(f"{Pj_Title} {Pj_Name.title()} Ecaped")
+        print(f"{Pj_Rank} {Pj_Name.title()} Ecaped")
         break
         
 print("Final Pj_Health", Pj_Health)
