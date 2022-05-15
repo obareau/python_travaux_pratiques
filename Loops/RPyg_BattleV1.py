@@ -1,13 +1,11 @@
 import random
 
-def print_lines():
-    print("-" * len(Screen_title))
-
 Screen_title =("| Welcome to RPyG_Battle |")
-# print("-" * len(Screen_title))
-print_lines()
+
+print("-" * len(Screen_title))
+
 print(Screen_title)
-# print("-" * len(Screen_title))
+print("-" * len(Screen_title))
 print_lines()
 
 Pj_Health = 50
