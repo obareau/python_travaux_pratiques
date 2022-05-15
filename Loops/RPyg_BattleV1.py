@@ -2,7 +2,7 @@ import random
 
 Pj_Health = 50
 Enemy_Health = 50
-Round_Counter = 100
+Round_Counter = 10
 Pj_Title = ("Lord")
 
 
@@ -58,6 +58,7 @@ while True:
         
         
     if Round_Counter == 0:
+        print(f"{Pj_Title} {Pj_Name.title()} Ecaped")
         break
         
 print("Final Pj_Health", Pj_Health)
