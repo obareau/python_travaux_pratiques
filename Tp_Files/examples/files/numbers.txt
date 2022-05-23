@@ -5,4 +5,8 @@ un
 deux
 trois
 LA PETITE MAISON DANS LA PRAIRIE
+
+
+
 TEST*REMOVE**CHAR
+12 lines
