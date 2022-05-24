@@ -1,10 +1,19 @@
-from turtle import *
-def carre(taille, couleur):
-    "fonction qui dessine un carré de taille et de couleur déterminées"
-    color(couleur)
-    c =0
-    
-    while c <4:
-        forward(taille)
-        right(90)
-        c = c +1
+from dessins_tortue import *
+up()
+goto(-150,50)
+# relever le crayon
+# reculer en haut à gauche
+# dessiner dix carrés rouges, alignés :
+i = 0
+while i < 10:
+    down()
+     # abaisser le crayon
+    carre(25, 'red')
+     # tracer un carré
+    up()
+     # relever le crayon
+    forward(30)
+     # avancer + loin
+    i = i +1
+a = input()
+ # attendre
