@@ -8,11 +8,11 @@ i = 0
 while i < 10:
     down()
      # abaisser le crayon
-    carre(25, 'red')
+    star5(50, 'red', 0)
      # tracer un carré
     up()
      # relever le crayon
-    forward(30)
+    forward(60)
      # avancer + loin
     i = i +1
 a = input()
