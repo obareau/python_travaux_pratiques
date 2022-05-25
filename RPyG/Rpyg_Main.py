@@ -7,6 +7,7 @@ class Pj(object):
         
         self.Pv = 25
         self.Xp =1
+        
     
     def dammage(self):
         maxrange = 12
@@ -22,7 +23,23 @@ class Pj(object):
         return take_dammage
 
     
-PjD1 = Pj()
-titi = PjD1.Pv  - PjD1.dammage()
+Pj1 = Pj()
+Enemy1 = Pj()
 
-print(titi)
+while True:
+    
+    if Pj1.health() > 0:
+        print("Pj is alive")
+        break
+
+
+# while True:
+#     if  Pj1.health() >= 0 or Enemy1.health() >= 0 :
+#         break
+    
+#     else:
+#         Pj.Pj1.dammage()
+
+# pj_attack = Pj1.Pv  - Pj1.dammage()
+# print(pj_attack)
+
