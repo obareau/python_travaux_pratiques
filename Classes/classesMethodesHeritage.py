@@ -1,12 +1,19 @@
-class Time:
-    pass
+class Time(object):
+    "Classe temporelle"
+
+    def __init__(self, hh=0, mm=0, ss=0):
+        self.heure = hh
+        self.minute = mm
+        self.seconde = ss
+
+    def afficheHeure(self):
+        print("%s:%s:%s" % (self.heure, self.minute, self.seconde))
 
 
-class Time:
-    "classe temporelle"""
+maintenant = Time() 
 
-    instant = Time()
-    instant.heure = 11
-    instant.minute = 34
-    instant.second = 25
+maintenant.afficheHeure() # 0:0:0
 
+recree = Time(10, 30) 
+
+recree.afficheHeure() # 10:30:0
