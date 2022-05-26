@@ -26,3 +26,4 @@ oPoint10.y = 10.0
 
 
 Point.distance(oPoint9, oPoint10)
+p1.distance(p2)
