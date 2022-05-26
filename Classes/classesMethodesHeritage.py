@@ -1,5 +1,5 @@
 class Time(object):
-    "Classe temporelle"
+    """Classe temporelle"""
 
     def __init__(self, hh=0, mm=0, ss=0):
         self.heure = hh
@@ -7,6 +7,7 @@ class Time(object):
         self.seconde = ss
 
     def afficheHeure(self):
+        
         print("%s:%s:%s" % (self.heure, self.minute, self.seconde))
 
 
