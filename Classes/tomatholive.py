@@ -1,5 +1,5 @@
-# ! UUsefull math library
+# ! Useful math library
 
 def sqr(a):
-    "mettre au carré"
+    """Mettre au carré"""
     return a*a
