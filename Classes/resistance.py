@@ -63,6 +63,6 @@ class Application(object):
         self.entree.delete(0, len(self.v1ch)) # enlever les car. présents
 # Programme principal :
 if __name__ == '__main__':
-    from Tkinter import *
+    from tkinter import *
     from math import log10 # logarithmes en base 10
     f = Application() # instanciation de l'objet application
