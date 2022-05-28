@@ -5,9 +5,9 @@ from tomatholive import sqr
 class Point(object):
     """Définition d'un point mathématique"""
 
-    def __init__(self):
-        self.y = None
-        self.x = None
+    def __init__(self, xx=0, yy=0):
+        self.x = xx
+        self.y = yy
 
     def distance(self, p2):
         """Calcule la distance Euclidienne"""
@@ -18,14 +18,10 @@ class Point(object):
         return sqrt(sqr(p2.y - self.y) + sqr(p2.x - self.x))
 
 
-oPoint9 = Point()  # p9 instance de la classe Point()
-oPoint10 = Point()  # p10 instance de la classe Point()
+oPoint9 = Point(0,0)  # p9 instance de la classe Point()
+oPoint10 = Point(10,10)  # p10 instance de la classe Point()
 
-oPoint9.x = 0.0
-oPoint9.y = 0.0
 
-oPoint10.x = 10.0
-oPoint10.y = 10.0
 
 Point.distance(oPoint9, oPoint10)
 # ToDO p1.distance(p2)
