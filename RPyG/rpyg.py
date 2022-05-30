@@ -18,10 +18,10 @@ class Entity(object):
         
     
     def Attack(self,victim):
-        oattack = randrange(0, self.attack)
-        print("[Attack]", oattack)
-        victim.health = victim.health - oattack
-        print("[Victim Health]", victim.health)
+        hit = randrange(0, self.attack)
+        print(f"Attaque : {self.name}, {hit}")
+        victim.health = victim.health - hit
+        print(f"Santé : {victim.name}", victim.health)
 
 
 
@@ -43,5 +43,12 @@ Enemy = Entity(oname="grominet")
 #     print("Enemy attack first")
 #     Enemy.Attack(who = Pj)
 
-while Enemy.health > 0:
+while Pj.health > 0 and Enemy.health > 0:
     Pj.Attack(victim = Enemy)
+    Enemy.Attack(victim = Pj)
+    
+if Pj.health >  Enemy.health:
+    print("J'ai gagné")
+    
+else:
+    print("J'ai perdu")
