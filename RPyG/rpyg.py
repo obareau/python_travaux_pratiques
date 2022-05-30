@@ -10,18 +10,18 @@ class Entity(object):
         self.health = ohealth
         self.ini = 0
         self.xp = oxp
-        self.attack = 0
+        self.attack = 12
         self.dammage = 0
 
     def Initiative(self):
         self.ini = randrange(0, 2)
         
     
-    def Attack(self):
-        self.attack = randrange(0, 12)
-
-    def Dammage(self, who):
-        self.dammage = who.health - self.attack
+    def Attack(self,victim):
+        oattack = randrange(0, self.attack)
+        print("[Attack]", oattack)
+        victim.health = victim.health - oattack
+        print("[Victim Health]", victim.health)
 
 
 
@@ -29,12 +29,19 @@ class Entity(object):
 Pj = Entity(oname="titi")
 Enemy = Entity(oname="grominet")
 
-# Who play first
-Pj.Initiative()
-Enemy.Initiative()
+# # Who plays first
+# Pj.Initiative()
+# Enemy.Initiative()
 
-if Pj.ini > Enemy.ini :
-    print("Pj attack first")
+
+
+# if Pj.ini > Enemy.ini :
+#     print("Pj attack first")
+#     Pj.Attack(who = Enemy)
     
-else:
-    print("Enemy attack first")
+# else:
+#     print("Enemy attack first")
+#     Enemy.Attack(who = Pj)
+
+while Enemy.health > 0:
+    Pj.Attack(victim = Enemy)
