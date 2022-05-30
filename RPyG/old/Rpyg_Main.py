@@ -2,38 +2,37 @@ import random
 
 
 class Pj(object):
-    "Définit le personnage jouable"
+    """Définit le personnage jouable"""
 
     def __init__(self):
         self.Pv = 30
         self.Xp = 1
+        
+    def printDommage(self): 
+        """affiche dommage"""
+        print("[Dommage] = ", self.dammage())        
 
     def dammage(self):
         # maxrange = 12
         # pt_attack = random.randrange(maxrange)
         # Xp = 1  # we will work on that later
         # print(pt_attack)
-        # return random.randint(0,5)
-        return 10
-        
+        return random.randrange(0, 12)
+        # return 10
 
     def health(self):
-        dammage =  self.dammage()
-        new_health = self.Pv - self.dammage()
-        print(new_health)
+
+        # new_health = self.Pv - self.dammage()
+        # print(new_health)
         return self.Pv - self.dammage()
-
-    # def pprint(self):
-    #     print(self.dammage())
-
 
 
 p1 = Pj()
-print(p1.dammage() ) 
-# print(p1.health())
+
+p1.pprint()
 
 
-if p1.dammage() >=10:
+if p1.dammage() >= 10:
     print("Critical hit")
 
 if p1.health() <= 20:
@@ -44,4 +43,3 @@ if p1.health() <= 20:
 #     else:
 #         p1.dammage
 #         p1.health = p1.health() - 1
-
