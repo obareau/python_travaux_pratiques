@@ -10,13 +10,18 @@ class Entity(object):
         self.health = ohealth
         self.ini = 0
         self.xp = oxp
-        
-
+        self.attack = 0
+        self.dammage = 0
 
     def Initiative(self):
         self.ini = randrange(0, 2)
+        
+    
+    def Attack(self):
+        self.attack = randrange(0, 12)
 
-
+    def Dammage(self, who):
+        self.dammage = who.health - self.attack
 
 
 
