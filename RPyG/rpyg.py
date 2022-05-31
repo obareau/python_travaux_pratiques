@@ -44,11 +44,16 @@ Enemy = Entity(oname="grominet")
 #     Enemy.Attack(who = Pj)
 
 while Pj.health > 0 and Enemy.health > 0:
+    
     Pj.Attack(victim = Enemy)
+    if Enemy.health <= 0:
+        break
+
     Enemy.Attack(victim = Pj)
+
     
 if Pj.health >  Enemy.health:
     print("J'ai gagné")
-    
+
 else:
     print("J'ai perdu")
