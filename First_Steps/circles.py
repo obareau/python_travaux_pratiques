@@ -9,5 +9,5 @@ pi = 3.14 # We can use the real Pi with python math library instead
 print("The area is : ", r * r * pi)  # 153.86
 print("The circumference is :", 2 * r * pi) # 43.96
 
-print("The area is : ", r * r * math.pi)
+print("The area is : ", r * r * math.pi) # precision is here !
 print("The circumference is :", 2 * r * math.pi)
