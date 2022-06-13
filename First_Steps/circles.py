@@ -5,7 +5,7 @@
 import math 
 
 r = 7
-pi = 3.14
+pi = 3.14 # We can use the real Pi with python math library instead
 print("The area is : ", r * r * pi)  # 153.86
 print("The circumference is :", 2 * r * pi) # 43.96
 
